@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 900px;
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 50px;
+}
+
+#imgPlace {
+    width: 900px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+
+#container .imgBig {
+    width: 100%;
+    height: 100%;
+    object-position: 50% 30%;
+    object-fit: cover;
+    display: none;
+}
+
+#imgPlace .position {
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    right: 23%;
+    text-align: right;
+    color: white;
+    display: none;
+}
+
+#imgPlace .d-block {
+    display: block;
+}
+
+.up {
+    background-color: lightgray;
+    border-radius: 50%;
+    border: none;
+    padding: 5px;
+    position: absolute;
+    top: 10%;
+    right: 7%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.down {
+    background-color: lightgray;
+    border-radius: 50%;
+    border: none;
+    padding: 5px;
+    position: absolute;
+    bottom: 0%;
+    right: 7%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+#imgRight {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+}
+
+.imgH {
+    height: 20%;
+    object-fit: cover;
+    filter: brightness(0.3)
+}
+
+.imgFilter {
+    filter: brightness(1);
+    border: 1px solid white;
+}
+
+.borderImg {
+    border: 1px solid white;
+}
